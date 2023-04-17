@@ -1,0 +1,58 @@
+<!---'''This is a new file to execute a task as a python script.'''--->
+{% extends "beta_layout.html" %}
+{% block title %}
+Leav Out Form
+{% endblock %}
+{% block heading %}
+<center><h1>Leav Out Form fill</h1></center>
+{% endblock %}
+{% block body %}
+<p>
+<form class="form" action="/leave-out-form" method="post">
+	First name:
+	<input type="text" autofocus name="fname" placeholder="firstname" >
+	Second name:
+	<input type="text" name="sname" placeholder="secondname" > 
+	Date:
+	<input type="date" name="date" placeholder="date" >
+	Department:
+	<select name="dptm" >
+		<option disabled  selected>--select--</option>
+		<option value="CEO Dept">CEO Dept</option>
+		<option value="Finance">Finance</option>
+		<option value="Human Resource">Human Resource</option>
+		<option value="ICT">ICT</option>
+		<option value="Sales Marketing">Sales Marketing</option>
+		<option value="Engineering">Engineering</option>
+		<option value="Workshop Dept">Workshop Dept</option>
+		<option value="Electricity Dept">Electricity Dept</option>
+		<option value="R and D">R and D</option>
+		<option value="Supply Chain">Supply Chain</option>
+		<option value="Quality Assurance">Quality Assurance</option>
+		<option value="Quality Control">Quality Control</option>
+		<option value="Secretariat">Secretariat</option>
+		<option value="House Keeping">House Keeping</option>
+		<option value="Raw Materials">Raw Materials</option>
+		<option value="Production">Production</option>
+		<option value="Security">Security</option>
+		<option value="SHE Dept">SHE Dept</option>
+		<option value="Governance Dept">Governance Dept</option>
+		<option value="Legal Dept">Legal Dept</option>
+	</select>
+
+<!---	<input type="text" name="department" placeholder="your department" >--->
+	Employee Number:
+	<input type="number" name="empno" placeholder="10001..." >
+	Tel.No:
+	<input type="number" name="telno" placeholder="2547249428.." >
+	From:
+	<input type="time" name="stime">
+	To:
+	<input type="time" name="etime">
+	Reason for Leave out:
+	<textarea type="textarea" name="reason" placeholder="message" >
+	</textarea>
+	<input type="submit" value="submit">
+</form>
+<form action="/cancel" method="post">                                                                       <input type="submit" value="Cancel">      </form>
+{% endblock %}

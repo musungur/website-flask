@@ -1,0 +1,38 @@
+<!--'''This is a new file to execute a task as a python script.'''--->
+{% extends "beta_layout.html" %}
+{% block title %}
+error
+{% endblock %}
+{% block heading %}
+<h1 style="color:red;text-align:center;">ERROR!!</h1>
+{% endblock %}
+{% block body %}
+
+<p style="color:red;text-align:center;">Form cannot contain blank fields for submission<br> <br>
+<center><table >
+	<tr>
+		<td>
+<!-- button to home page-->
+<form action="/try" method="post">
+	<input type="submit" value="Home">
+</form>
+		</td><td>
+<!--button to leaveoutform-->
+<form action="/leave-out", method="post">
+	<input type="submit" value="Leav out form">
+</form>
+		</td><td>
+<!---button to gatepass--->
+<form action="/gatep" method="post">
+	<input type="submit" value="Gate Pass">
+</form>
+		</td><td>                         <!---button to gatepass--->                       <form action="/lbook" method="post">
+	<input type="submit" value="LeavBook">
+</form>                                                           </td><td>                         <!---button to gatepass--->                       <form action="/cheque" method="post">                      <input type="submit" value="Cheque">    
+</form>                                                           </td><td>                         <!---button to gatepass--->                       <form action="/salesreport" method="post">                 <input type="submit" value="Sales Repor">   </form>                                                           </td><td>                         <!---button to gatepass--->                       <form action="/inventmvmnt" method="post">
+         <input type="submit" value="inventory">   </form>                                                           </td>
+	</tr>
+</table>
+</p>
+</center>	
+{% endblock %}

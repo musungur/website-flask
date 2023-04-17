@@ -1,0 +1,15 @@
+<!--'''This is a new file to execute a task as a python script.'''--->
+{% extends "web.html" %}
+{% block heading %}
+<center style="color:green;"><h1>Successful!</h1></center>
+{% endblock %}
+{% block body %}
+<center style="color:green;">
+	<p>form submitted Successful!</p><p>Please proceed to wait at gate for approval confirmation.</p>
+<!---<input type="submit" value="go to home page">
+--->
+<form action="/button" method="post">
+	<input type="submit" value="Go back to home page">
+</form>
+</center
+{% endblock %}

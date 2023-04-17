@@ -1,0 +1,18 @@
+<!---'''This is a new file to execute a task as a python script.'''--->
+{% extends "web.html" %}
+{% block title %}
+Aproval forms
+{% endblock %}
+{% block body %}
+<ul>
+	{% for l in forms %}
+	<li>{{l}}<br>
+		<input type="submit" value="appproved">
+		<input type="submit" value="Cancel">
+	</li>
+	{% endfor %}
+</ul>
+		<script>
+
+		</script>
+{% endblock %}

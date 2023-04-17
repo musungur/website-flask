@@ -1,0 +1,28 @@
+<!---'''This is a new file to execute a task as a python script.'''--->
+{% extends "beta_layout.html" %}
+{% block title %}
+Beta Healthcare Internal forms
+{% endblock %}
+{% block heading %}
+<center><h1> BETA  FORMS</h1></center>
+{% endblock %}
+{% block body %}
+<center>
+<p style="color:blue;">
+<form class="form" action="/register" method="post">
+<!--	<input type="text" name="name" placeholder="name">
+<input type="email" name="email" placeholder="email here.." >-->
+	<select name="formtype" >
+		<option disabled selected>--select form--</option>
+		<option value="Leave out form">Leave out form</option>
+		<option value="Gate pass">Gate pass</option>
+		<option value="Leav Book">Leav Book</option>
+		<option value="Inventory Movement">Inventory Movement</option>
+		<option value="Cheque Requisition">Cheque Requisition</option>
+		<option value="sales Report">sales Report</option>
+
+		<input type="submit" value="Open">
+</form>
+</p>
+</center>
+{% endblock %}

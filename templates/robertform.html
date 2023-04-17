@@ -1,0 +1,19 @@
+<!---'''This is a new file to execute a task as a python script.'''--->
+{% extends "web.html" %}
+{% block title %}
+<h1>Registration form</h1>
+{% endblock %}
+{% block body %}
+<form action="/register" method="post">
+	<input name="name" type="text" placeholder="name">
+	<select name="dorm">
+		<option disabled selected>Dorm</option>
+		<option value="Bukura">Bukura</option>
+	        <option value="Machakos">Machakos</option>
+                <option value="Nairobi">Nairobi</option>
+		<option value="Mombasa">Mombasa</option>
+		<option value="Kakamega">Kakamega</option>
+	</select>
+	<input type="submit" value="Register">
+</form>
+{% endblock %}

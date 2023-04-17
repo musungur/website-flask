@@ -1,0 +1,39 @@
+<!---'''This is a new file to execute a task as a python script.'''--->
+{% extends "beta_layout.html" %}
+{% block title %}
+Gate pass form
+{% endblock %}
+{% block heading %}
+<center><h1> GATE PASS FORM FILL </h1></center>
+{% endblock %}
+{% block body %}
+<!---<style align="left">Date:<input type="date" value=date"></style> --> 
+<table>
+<tr>
+<td>
+<form action="/sql" method="post">
+	<!---action="/gatepass"--->
+        <label name="l1">Name:</label>
+        <input type="text" autofocus name="name">
+	<label name="l2">No Plate:</label>
+	<input type="text" name="nplate">
+	<label name="l3">Time:</label>
+	<input type="time" name="timer"><br>
+	<label name="l4">Reason:</label>
+	<br>
+	<textarea type="text" rows="5" cols="70" name="textarea" >
+	</textarea><br />
+	<input type="submit" value="submit">
+
+</form>
+</td>
+<td>
+<form action="/cancel" method="post">
+
+        <input type="submit" value="Cancel">
+</form>
+
+</td>
+</tr>
+</table>
+{% endblock %}

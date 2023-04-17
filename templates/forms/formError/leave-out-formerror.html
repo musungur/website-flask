@@ -1,0 +1,17 @@
+{% extends "web.html" %}
+{% block title %}
+error
+{% endblock %}
+{% block heading %}
+<center><h1>leave out form Error</h1></center>
+{% endblock %}
+{% block body %}
+<center>
+<h3 style="color:red;">
+	The form cannot contain blank fields while submitting. please fill out all the fields.
+</h3>
+<form action="/leave-out-form-trial" method="post">
+	<input type="submit" value="try again">
+</form>
+</center>
+{% endblock %}
